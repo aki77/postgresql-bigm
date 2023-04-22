@@ -1,8 +1,8 @@
-FROM postgres:13
+FROM postgres:14
 MAINTAINER aki77 <aki77@users.noreply.github.com>
 
 RUN apt update
-RUN apt install -y postgresql-server-dev-13 make gcc wget libicu-dev
+RUN apt install -y postgresql-server-dev-14 make gcc wget libicu-dev
 
 RUN wget https://ja.osdn.net/dl/pgbigm/pg_bigm-1.2-20200228.tar.gz
 RUN tar zxf pg_bigm-1.2-20200228.tar.gz

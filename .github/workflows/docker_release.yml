@@ -19,9 +19,9 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build --tag ghcr.io/$GITHUB_ACTOR/postgresql-bigm:latest \
-          --tag ghcr.io/$GITHUB_ACTOR/postgresql-bigm:13 \
+          --tag ghcr.io/$GITHUB_ACTOR/postgresql-bigm:14 \
           .
       - name: Push Docker Image
         run: |
           docker push ghcr.io/$GITHUB_ACTOR/postgresql-bigm:latest
-          docker push ghcr.io/$GITHUB_ACTOR/postgresql-bigm:13
+          docker push ghcr.io/$GITHUB_ACTOR/postgresql-bigm:14
